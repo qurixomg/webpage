@@ -19,14 +19,7 @@
   width:20%;
   text-align:center;
 }
-.menu a {
-  background-color:#00648f;
-  padding:8px;
-  margin-top:7px;
-  display:block;
-  width:100%;
-  color:black;
-}
+
 .main {
   float:left;
   width:60%;
@@ -36,9 +29,17 @@
   float:left;
   width:40%;
   padding:15px;
-  margin-top:80px;
+  margin-top:50px;
   text-align:center;
   color:#2B628C;
+}
+.right2 {
+  width:40%;
+  padding:15px;
+  margin-top:50px;
+  text-align:center;
+  color:#2B628C;
+  margin-left:40%;
 }
 
 @media only screen and (max-width:620px) {
@@ -57,6 +58,12 @@
         }
         .center-fit {
             max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+        .center-fit2 {
+          min-width: 80%;
+            max-width: 120%;
             max-height: 100vh;
             margin: auto;
         }
@@ -79,19 +86,19 @@
   margin: 4px 2px;
   cursor: pointer;
   position: relative;
-  font-family: verdana;
+  font-family: Roboto;
   border-radius: 8px;
   }
 .button2 {
   background-color: #F9F9FB;
   color: white;
-  padding: 0.5em;
+  padding: 15px 30px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
   position: relative;
-  font-family: verdana;
+  font-family: Roboto;
   border-radius: 8px;
   color: black;
   }
@@ -104,6 +111,12 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }  
+.center3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 .container { 
   height: 200px;
@@ -122,7 +135,7 @@
 }
 .box{
   width: 100%;
-  height: 120px;
+  height: 180px;
 }
 
 
@@ -134,31 +147,42 @@
 }
 </style>
 </head>
-<body style="font-family:Verdana;color:#aaaaaa;">
-<div style="overflow:auto">
 
-  <div class="main">
-<div class="imgbox">
-    <img class="center-fit" src='hand mockup.svg'>
-</div>  
-  </div>
+<body style="font-family:Roboto;color:#aaaaaa;">
 
-  <div class="right">
-    <h2>Save your time with omg!</h2>
-    <br>
-    <br>
-    <p>The app that digitizes your analysis process.
+
+
+  <p><div style="overflow:auto background-color:white">
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+
+   <div class="w3-third w3-center">
+    <img class="center-fit2" src='images/hand mockup.svg' width=2000px>
+    </div>
+     
+ <div class="right2">
+    <h2><b>Save your time <br> with omg! <img src='images/clock icon.svg' width=500px% height=50px class="center3"></b> </h2>
+      <p> <b> The app that digitizes your analysis process.</b>
     <br>
       <p style="color:black;">Start now and don’t waste your time anymore. Let the omg
     watch your projects. </p>
     </p>
     <div class="container">
   <div class="center">
-<a href="" class="button">Start now.</a>
+<a href="" class="button">Start now</a>
   </div>
 </div>
   </div>
+
+     
+  </div>
 </div>
+
+</div></p>
+
+
 <br>
 <br>
 <br>
@@ -166,11 +190,11 @@
 <br>
 <div class="container2">
 <p></p>
-    <img src='mobile icon.svg' width=100px height=100px>
+    <img src='images/mobile icon.svg' width=100px height=100px class="center3">
 <p></p>
-    <img src='clock icon.svg' width=100px% height=100px%>
+    <img src='images/hi.svg' width=100px% height=100px class="center3">
 <p></p>
-    <img src='connection icon.svg' width=100px% height=100px%>
+    <img src='images/connection icon.svg' width=100px% height=100px class="center3">
 <p></p>
 <p></p>
 
@@ -195,19 +219,19 @@
     <div style="text-align:left;">
 
       <div class="w3-third w3-center">
-    <img class="center-fit" src='mockup rule.svg'>
+    <img style="float:left" src='images/mockup rule.svg'>
     </div>
 
 
     <div class="w3-twothird">
-      <h1 style="color:#F9F9FB;">Rules</h1>
-      <h5 style="color:#F9F9FB;" class="w3-padding-32">Use our predefined rules to start your analysis process of your website!.</h5>
-      <h6 style="color:#F9F9FB;">Predefined rules: <br>
-      All User Views = User Rate out of Boundaries<br>
-      New User Rate = User Rate of new Users out of Boundaries<br>
-      Conversion Rate = Use your in GA predefined goals, Notification when Conversion Rate hits<br>
-      Referral User Rate = User rate from i omg defend source is out of Boundaries<br>
-      Custom Rule = Configure your rule from the bottom up using the same options that you have in your Google Analytics account.<br>
+      <h1 style="color:#F9F9FB;"><b>Rules</b></h1>
+      <h5 style="color:#F9F9FB;" class="w3-padding-32"><b>Use our predefined rules to start your analysis process of your website!</b></h5>
+      <h6 style="color:#F9F9FB;"><b>Predefined rules: </b><br>
+      All Page Views = Tracks the absolute number of users on your website at one time. <br>
+      Conversion Goals = Tracks the number of completions of your selected conversion goal. <br>
+      New User Rate = Tracks the rate of new users in relation to all users. <br>
+      Referrals = Tracks the number of users of your website from a selected source. <br>
+      Custom Rule = Tracks a custom rule that you create using metric, dimension, and filters for building a Query with the same options that you have in your Google Analytics Account. <br>
     </h6>
     </div>
     </div>
@@ -229,15 +253,15 @@
       <div style="text-align:right;">
 
     <div class="w3-twothird">
-      <h1 style="color:black;">Push Notifications/Alerts</h1>
-      <h5 style="color:black;" class="w3-padding-32">Never miss an event through the push notification! <br> 
+      <h1 style="color:black;"><b>Push Notifications/Alerts</b></h1>
+      <h5 style="color:black;" class="w3-padding-32"><b>Never miss an event through the push notification! </b><br> 
       You automatically get notified via push notification when one of your rules occurs.</h5>
       <h6 style="color:black;">  </h6>
     </div>
 </div>
 
       <div class="w3-third w3-center">
-    <img class="center-fit" src='mockup alert.svg'>
+    <img class="center-fit" src='images/mockup alert.svg'>
     </div>
   </div>
 </div>
@@ -253,15 +277,15 @@
   <div class="w3-content">
 
       <div class="w3-third w3-center">
-    <img class="center-fit" src='mockup push notification.svg'>
+    <img class="center-fit" src='images/mockup push notification.svg'>
     </div>
 
 
     <div class="w3-twothird">
     <div style="text-align:left;">
-      <h1 style="color:#F9F9FB;">Trello Connection</h1>
-      <h5 style="color:#F9F9FB;" class="w3-padding-32">Choose your trello board which omg uses for task creation!
-      <br> Close your workflow by creating a task directly in your push notification. Choose directly in the message how you want to react.</h5>
+      <h1 style="color:#F9F9FB;"><b>Trello <br> Connection</b></h1>
+      <h5 style="color:#F9F9FB;" class="w3-padding-32"><b>Choose your trello board which omg uses for task creation!</b>
+      <br> Close your workflow by creating a task directly in your <br> push notification. Choose directly in the message <br> how you want to react.</h5>
       <h6 style="color:#F9F9FB;"> </h6>
     </div>
     </div>
@@ -274,8 +298,8 @@
 
 <div class="box green">
   <div class="header2">
-<h3 style= "color:black";> Relax and omg. does does the rest.</h3>
-<a href="" class="button2">Start now.</a>
+<h2 style= "color:black";> Relax and omg. does the rest.</h2>
+<a href="" class="button2">Start now</a>
 </div>
 </div>
 
@@ -294,14 +318,14 @@
       </a>
 <p></p>
  <a href="https://mast.informatik.uni-hamburg.de/mlab/">
-         <img alt="m-lab" src="M-Lab_logo.png"
+         <img alt="m-lab" src="images/M-Lab_logo.png"
          width="80" height="24.0">
       </a>
 <p></p>
 
          <a href="https://www.uni-hamburg.de">
-         <img alt="uhh" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/UHH-Logo_2010_small_invers.svg/1024px-UHH-Logo_2010_small_invers.svg.png"
-         width="50" height="50">
+         <img alt="uhh" src="images/logo uni hh.png"
+         width="128" height="41">
       </a>
 </div>
 <br>
